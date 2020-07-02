@@ -1,0 +1,59 @@
+/* colors */
+:root {
+  --theme: #004d40;
+  --bg-grey: #f5f5f5;
+  --border: #e0e0e0;
+}
+
+/* layout styles */
+nav {
+  background: var(--theme);
+}
+nav .brand {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+nav .brand span {
+  font-weight: 700;
+}
+
+.section-books {
+  background: var(--bg-grey);
+  border-bottom: 1px solid var(--border);
+}
+
+/* book styles */
+.card.book {
+  display: grid;
+  grid-template-areas: 'image details delete';
+  grid-template-columns: 80px 1fr 40px;
+  padding: 1rem;
+}
+.book-image {
+  grid-area: image;
+}
+.book-image img {
+  max-width: 50px;
+}
+.book-details {
+  grid-area: details;
+  color: #616161;
+}
+.book-title {
+  font-weight: 700;
+}
+.book-author {
+  font-size: 0.8rem;
+}
+.book-delete {
+  grid-area: delete;
+  position: absolute;
+  right: 0px;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+/* form styles */
+form .input-field {
+  margin: 2rem 0;
+}
