@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import './App.css';
+import '../assets/css/App.css';
 
-import BookContextProvider from './components/books/contexts/BookContext';
+import BookContextProvider from './books/contexts/BookContext';
 
-import Navbar from './components/screens/Navbar';
-import Dashboard from './components/screens/Dashboard';
-import About from './components/screens/About';
-import Contact from './components/screens/Contact';
+import Navbar from './screens/Navbar';
+import Dashboard from './screens/Dashboard';
+import About from './screens/About';
+import Contact from './screens/Contact';
 
 const App = () => {
   return (
