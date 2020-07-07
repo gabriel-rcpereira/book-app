@@ -15,20 +15,20 @@ module.exports = (app) => {
 			const book = await new BookFinder().execute(id);		
 			res.status(200).send(book);
 		} catch (error) {
-			res.status(404);
+			res.status(404).send();
 		}
 	});
 
 	app.post('/api/v1/books', (req, res) => {
-		const newBook = req.body;
-		new BookCreator().execute(newBook);
+		const newBooks = req.body;
+		new BookCreator().execute(newBooks);
 		res.status(201).send();
 	});	
 
 	app.put('/api/v1/books/:id', (req, res) => {
 		const updatedBook = {};
 		res.status(204).send();
-	});	
+	});
 
 	app.delete('/api/v1/books/:id', (req, res) => {
 		const deletedBook = {};

@@ -6,8 +6,11 @@ const BookRepository = {
 	find(filter = {}) {
 		return Book.find(filter);
 	}
-	,save(book) {
-		return new Book(book).save();
+	,save(books) {
+		books.map((book) => (new Book(book)))
+			.forEach(book => {
+				book.save();
+			});
 	}
 };
 

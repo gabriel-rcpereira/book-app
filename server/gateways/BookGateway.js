@@ -10,8 +10,8 @@ class BookGateway {
 		return BookRepository.find();
 	}
 
-	save(book) {
-		return BookRepository.save(book)
+	save(books) {
+		return BookRepository.save(books)
 	}
 }
 

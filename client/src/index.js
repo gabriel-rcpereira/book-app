@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
+// import axios from 'axios';
+// module.export = axios;
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
